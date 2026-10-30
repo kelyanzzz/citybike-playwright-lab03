@@ -1,0 +1,15 @@
+:root { color-scheme: light; --navy:#102b3d; --green:#00796b; --paper:#f4f8f7; --line:#d5e4e1; --muted:#5a7178; }
+* {box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--paper);color:var(--navy);line-height:1.5}
+.shell{max-width:980px;margin:auto;padding:35px 22px 60px}.masthead{padding:30px 32px 26px;background:var(--navy);color:white;border-radius:18px;margin-bottom:24px}
+.eyebrow{font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:.68rem;color:#27a797;margin:0 0 6px}.masthead .eyebrow{color:#8ee1d5}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:8px 0}.masthead p:last-child{color:#d7e8ed;max-width:560px}h2{font-size:1.5rem;margin:3px 0}
+.panel{border-radius:16px;background:white;border:1px solid var(--line);padding:24px 28px;margin-bottom:22px;box-shadow:0 8px 28px #0a32330a}
+.heading-row{display:flex;align-items:center;justify-content:space-between;gap:12px}.heading-row span{color:var(--muted);font-size:.9rem}
+.controls{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:20px 0}.controls>label:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+input[type=search],input[type=email]{padding:11px 13px;border:1px solid #99b4b8;border-radius:8px;font:inherit;min-width:220px;flex:1}
+label.check{display:flex;align-items:center;gap:8px;white-space:nowrap;color:var(--navy)}input[type=checkbox]{height:18px;width:18px}
+.station-card{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--line);padding:17px 0}.station-card h3{margin:0 0 2px;font-size:1.05rem}.station-card p{margin:0;color:var(--muted);font-size:.9rem}
+button{background:var(--green);color:white;border:none;padding:10px 15px;border-radius:9px;font:inherit;font-weight:650;cursor:pointer}button[disabled]{background:#9caeae;cursor:not-allowed}button:hover:not([disabled]){background:#00574f}
+#notification{background:#fff1e8;border:1px solid #f2ae83;padding:13px;border-radius:8px;margin-bottom:12px}
+#reserve-panel input{display:block;width:100%;margin:7px 0 9px}#confirm{margin-top:4px}.field-error{color:#b33330;font-size:.9rem}#result{min-height:32px;color:#006c60;font-weight:700}footer{font-size:.8rem;color:var(--muted)}
+@media(max-width:600px){.station-card{align-items:flex-start;flex-direction:column}.panel{padding:18px}.controls{align-items:flex-start;flex-direction:column}input[type=search]{width:100%}}
